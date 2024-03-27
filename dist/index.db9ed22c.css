@@ -1,0 +1,202 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap";
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: #dee2e6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  display: flex;
+}
+
+#container {
+  background-color: #0466c8;
+  width: 25%;
+  height: 90%;
+}
+
+#container section {
+  padding: 0 1.4rem;
+}
+
+#container #top {
+  background-color: #fff;
+  flex-direction: column;
+  height: 60%;
+  display: flex;
+}
+
+#container #top header {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  display: flex;
+}
+
+#container #top header #icon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 10%;
+  display: flex;
+}
+
+#container #top header #icon .back-button {
+  font-size: 1.4rem;
+}
+
+#container #top header #question-numbers {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  display: flex;
+}
+
+#container #top header #question-numbers #current-question {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+#container #top header #question-numbers #total-questions {
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+#container #top #outer-progress-bar {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  width: 100%;
+  height: 7px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+#container #top #outer-progress-bar #inner-progress-bar {
+  background-color: #0466c8;
+  height: 100%;
+}
+
+#container #top #question {
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+  display: flex;
+}
+
+#container #top #question p {
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 2.7rem;
+}
+
+#container #top footer {
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+#container #bottom {
+  flex-direction: column;
+  align-items: center;
+  height: 40%;
+  display: flex;
+}
+
+#container #bottom button {
+  color: #fff;
+  text-align: center;
+  background-color: #0000;
+  border: none;
+  border-left: 5px solid #fff;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (width <= 483px) {
+  #container {
+    width: 90%;
+  }
+
+  #container #bottom button {
+    margin-top: 20px;
+  }
+}
+
+#result {
+  background-color: #f2e9e4;
+  flex-direction: column;
+  width: 25%;
+  height: 90%;
+  padding: 1rem;
+  display: flex;
+}
+
+#result header {
+  width: 100%;
+  height: 60%;
+}
+
+#result header h1, #result header img {
+  margin: 0;
+}
+
+#result header img {
+  width: 100%;
+}
+
+#result header h1 {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 20%;
+  display: flex;
+}
+
+#result #status {
+  flex-direction: column;
+  justify-content: center;
+  height: 20%;
+  font-size: 1.4rem;
+  font-weight: 300;
+  display: flex;
+}
+
+#result #status p {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+#result footer {
+  flex-direction: column;
+  align-items: center;
+  height: 20%;
+  display: flex;
+}
+
+#result footer button {
+  background-color: #0000;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: .5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media screen and (width <= 483px) {
+  #result {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=index.db9ed22c.css.map */

@@ -1,0 +1,119 @@
+$theme-color: #0466c8;
+
+#container {
+    background-color: $theme-color;
+    height: 90%;
+    width: 25%;
+
+    section {
+        padding: 0 1.4rem;
+    }
+
+    #top {
+        background-color: white;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // justify-content: center;
+            margin-top: 2rem;
+            
+            #icon {
+                width: 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                .back-button {
+                    font-size: 1.4rem;
+                }
+            }
+            #question-numbers {
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                // text-align: center;
+
+                #current-question {
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+                #total-questions {
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                }
+            }
+        }
+        #outer-progress-bar {
+            padding: 0;
+            margin-top: 15px;
+            width: 100%;
+            height: 7px;
+            border: none;
+            border-bottom: solid 1px #ced4da;
+
+            #inner-progress-bar {
+                height: 100%;
+                background-color: $theme-color;
+            }
+        }
+        #question {
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                font-weight: 200;
+                font-size: 2rem;
+                line-height: 2.7rem;
+            }
+        }
+        footer {
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+    }
+    #bottom {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        button {
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: transparent;
+            border: none;
+            border-left: solid 5px white;
+            color: white;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 483px){
+
+    #container {
+        width: 90%;
+
+        #bottom {
+            button {
+                margin-top: 20px;
+            }
+        }
+    }
+    
+}
